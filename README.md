@@ -46,6 +46,30 @@ This web app was developed using the following technologies:
    - Install dependencies:
         ```bash
         pip install -r requirements.txt
+   - Create the SQLite database (finance.db) and schema (run these commands in your terminal to initialize the required tables):
+        ```bash
+        sqlite3 finance.db
+   - Then, inside the sqlite3 prompt, execute:
+        ```bash
+        CREATE TABLE users (
+            id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            username TEXT NOT NULL,
+            hash TEXT NOT NULL,
+            cash NUMERIC NOT NULL DEFAULT 10000.00
+        );
+        CREATE UNIQUE INDEX username ON users (username);
+
+        CREATE TABLE transactions (
+            id INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,
+            user_id INTEGER NOT NULL,
+            symbol TEXT NOT NULL,
+            shares INTEGER NOT NULL,
+            price NUMERIC NOT NULL,
+            type TEXT NOT NULL,
+            transacted DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+            FOREIGN KEY(user_id) REFERENCES users(id)
+        );
+        .quit
    - Set your Alpha Vantage API key (sign up at https://www.alphavantage.co/support/#api-key):
         ```bash
         export API_KEY=your_api_key_here  # On Windows: set API_KEY=your_api_key_here
