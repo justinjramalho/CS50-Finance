@@ -1,0 +1,38 @@
+# Python/Flask specifics
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+
+# Virtual environment (do not commit; recreate on deployment)
+venv/
+
+# Database (SQLite file may contain sensitive test data like user portfolios/transactions; recreate or seed on setup)
+finance.db
+
+# Environment variables/secrets (e.g., for Alpha Vantage API key used in `lookup()`)
+.env
+
+# Mac-specific files (as you mentioned .DS_Store appearing)
+.DS_Store
+.AppleDouble
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# IDE/editor temp files (common in VS Code or CS50 IDE)
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temp files
+*.log
+tmp/
+
+# OS-generated files
+Thumbs.db
+ehthumbs.db
