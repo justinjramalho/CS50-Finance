@@ -33,7 +33,7 @@ This web app was developed using the following technologies:
 
 ## 💻 How to Run
 
-1. **Live Demo**: The app is deployed and accessible at [https://cs50finance.pythonanywhere.com](https://www.cs50finance.pythonanywhere.com).
+1. **Live Demo**: The app is deployed and accessible at [https://cs50finance.pythonanywhere.com/](https://cs50finance.pythonanywhere.com/).
 2. **Local Setup**:
    - Clone the repository:
         ```bash
@@ -78,6 +78,10 @@ This web app was developed using the following technologies:
         flask run
    - Visit http://127.0.0.1:5000 in your browser. Register an account to start trading virtually.
 
-For deployment to PythonAnywhere: Upload code (excluding venv), recreate virtualenv, set API key as env var, configure WSGI, and reload the web app.
+**For deployment to PythonAnywhere**, upload code (excluding venv), recreate virtualenv, configure the API key via .env file, configure WSGI, and reload the web app. Detailed steps:
+- Create a `.env` file in your app directory with `API_KEY=your_api_key_here`.
+- Install `python-dotenv` in your virtualenv: `pip install python-dotenv` and add it to `requirements.txt`.
+- Update the WSGI file to load the .env before importing your app (see deployment guide or repo for exact code).
+- Reload the web app in the PythonAnywhere dashboard.
 
 This README was last updated on August 02, 2025.
