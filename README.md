@@ -2,7 +2,7 @@
 
 This repository contains the source code for C$50 Finance, a Flask-based web app for virtual stock trading. Built as part of Harvard's CS50x Introduction to Computer Science (Web Track), it simulates managing stock portfolios with real-time quotes from Alpha Vantage.
 
-👉 [View project details on my portfolio](https://www.justinjramalho.com/projects/developer/cs50-finance) <!-- Update with your actual portfolio link if available -->
+👉 [View project details on my portfolio](https://www.justinjramalho.com/projects/developer/c50-finance)
 
 ## 🚀 Project Overview
 
@@ -33,7 +33,7 @@ This web app was developed using the following technologies:
 
 ## 💻 How to Run
 
-1. **Live Demo**: The app is deployed and accessible at [https://cs50finance.pythonanywhere.com](https://cs50finance.pythonanywhere.com) (update with your actual subdomain after deployment).
+1. **Live Demo**: The app is deployed and accessible at [https://cs50finance.pythonanywhere.com](https://www.cs50finance.pythonanywhere.com).
 2. **Local Setup**:
    - Clone the repository:
         ```bash
