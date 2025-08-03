@@ -1,5 +1,8 @@
 import os
 
+#from dotenv import load_dotenv  # Load environment variables early (for API_KEY in helpers.lookup)
+#load_dotenv()  # Loads .env from app root; falls back silently if missing
+
 from cs50 import SQL
 from flask import Flask, flash, jsonify, redirect, render_template, request, session
 from flask_session import Session

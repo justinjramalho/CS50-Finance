@@ -79,7 +79,16 @@ def lookup(symbol):
         }
     except (KeyError, TypeError, ValueError):
         return None
-        '''
+    '''
+    
+    '''
+    # Temporary mock for testing (returns fake data to bypass API limits)
+    return {
+        "name": "Mock " + symbol.upper(),
+        "price": 100.0,
+        "symbol": symbol.upper()
+    }
+    '''
 
 
 def usd(value):
